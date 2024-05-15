@@ -1,0 +1,39 @@
+<%- include('partials/header.ejs') %>
+
+    
+   
+    <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+              <img src="../images/me.png" alt="">
+              </div>
+              <div class="col">
+                <div class="container  px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-md-10 col-lg-10 col-xl-10">
+                            <div class="site-heading">
+                                <% if (locals.name) { %>
+                                    <h1>who is <%= name %> ?</h1>
+                               
+                                
+                                <p class="subheading"><%= name %> 
+                                    is a Dedicated IT Professional and Strong knowledge on Python,JavaScript and PostgreSQL. 
+                                    Skilled in technical support, solution configuration, and collaboration with cross functional teams to deliver exceptional results. Eager to leverage expertise and passion for Python programming in a challenging Developer role, contributing to innovative projects and solutions.
+                                </p>
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+    
+   </header>
+<!-- Main Content-->
+
+<%- include('about.ejs') %> 
+<%- include('experience.ejs') %> 
+<%- include('partials/footer.ejs') %>
+
